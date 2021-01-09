@@ -1,15 +1,19 @@
 module.exports = {
-  purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'media', // 'media' or 'class'
+  purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "media", // 'media' or 'class'
   theme: {
     extend: {
       colors: {
-        'accent-1': '#333',
+        "background": "#1d1d1d",
+        "light": "hsla(0, 0%, 100%, 0.05)",
+        "accent-1": "#333",
       },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      cursor: ['hover', 'focus'],
+    },
   },
-  plugins: [],
-}
+  plugins: [require("@tailwindcss/forms")],
+};
