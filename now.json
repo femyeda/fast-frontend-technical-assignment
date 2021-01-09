@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "redirects": [],
+    "headers": [],
+    "env": {
+      "NEXT_PUBLIC_FAST_OMDB_KEY": "@next_public_fast_omdb_key"
+    },
+    "build": {
+      "env": {
+        "NEXT_PUBLIC_FAST_OMDB_KEY": "@next_public_fast_omdb_key"
+      }
+    }
+  }
